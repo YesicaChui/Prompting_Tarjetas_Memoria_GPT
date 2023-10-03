@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App para estudiar</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="logo">
+    <h1>Yesica -Generador de preguntas para estudiar </h1>
+    <img  src="./img/logo.svg" alt="">
+  </div>
+  <div class="topic_container">
+    <div>
+      <label for="inputArea">Area:</label>
+      <input type="text" id="inputArea">
+    </div>
+    <div>
+      <label for="inputTema">Tema</label>
+      <input type="text" id="inputTema">
+    </div>
+    <div>
+      <label for="inputNumero">Nº preguntas</label>
+      <input value="5" type="number" id="inputNumero" min="5" max="10">
+    </div>
+
+    <div>
+      <button id="btnPreguntas" onclick="onClickBtnPreguntas()">Generar Preguntas</button>
+    </div>
+  </div>
+  <div id="imgCargando">
+    <img  src="./img/gif_cargando.gif" alt="">
+  </div>
+  <div class="card"  onclick="onClickCard()">
+    <div id="pregunta">
+      <b>Pregunta <span id="txtNumero">1</span>:</b><br>
+      <span id="txtPregunta">¿Que es el f?</span>
+    </div>
+    <div id="respuesta">
+      <b>Respuesta:</b><br>
+      <span id="txtRespuesta">¿Que es el polimorfism?</span>
+    </div>
+ </div>
+
+</body>
+
+<script src="./main.js"></script>
+
+</html>
