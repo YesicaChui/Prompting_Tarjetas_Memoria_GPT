@@ -1,4 +1,4 @@
-const CHATGPT_KEY = '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'
+const CHATGPT_KEY = 'sk-YK5ghuCgu05aV---TULLAVE-APIKEY------ZSEkYrGEIGMvha59'
 mostrarCard(false)
 mostrarCargando(false)
 let cantidadPreguntas = 5
